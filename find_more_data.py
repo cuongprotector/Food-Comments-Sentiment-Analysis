@@ -8,7 +8,7 @@ import pandas as pd
 import numpy as np
 import os
 # read file train csv
-food_cmt_df = pd.read_csv("C:/Users/nygeu/OneDrive/Máy tính/Hocmay/full_train.csv/full_train.csv",encoding="UTF8")
+food_cmt_df = pd.read_csv(".../full_train.csv/full_train.csv",encoding="UTF8")
 food_cmt_df.head(10)
 
 food_train = food_cmt_df[["Comment","Rating"]].copy()
@@ -21,10 +21,10 @@ print(food_train["Rating"].value_counts())
 #   with 7146 1 and 1924 0 this label data will lost balance so we will add more data with label 0,1 until this samples reach 10k for each 0,1
 # We get more data for food reviewer content in website "https://github.com/congnghia0609/ntc-scv/tree/master/data"
 # I get 30k sample Equally divided to positive and negative
-data_train_path_0 = "C:/Users/nygeu/OneDrive/Máy tính/Hocmay/data_train/train/neg"
-data_train_path_1 = "C:/Users/nygeu/OneDrive/Máy tính/Hocmay/data_train/train/pos"
-data_test_path_0 = "C:/Users/nygeu/OneDrive/Máy tính/Hocmay/data_test/neg"
-data_test_path_1 = "C:/Users/nygeu/OneDrive/Máy tính/Hocmay/data_test/pos"
+data_train_path_0 = ".../data_train/train/neg"
+data_train_path_1 = ".../data_train/train/pos"
+data_test_path_0 = ".../data_test/neg"
+data_test_path_1 = ".../data_test/pos"
 data_train_list_0 = [os.path.abspath(os.path.join(data_train_path_0, p)) for p in os.listdir(data_train_path_0)]
 data_train_list_1 = [os.path.abspath(os.path.join(data_train_path_1, p)) for p in os.listdir(data_train_path_1)]
 data_test_list_0 =  [os.path.abspath(os.path.join(data_test_path_0, p)) for p in os.listdir(data_test_path_0)]
