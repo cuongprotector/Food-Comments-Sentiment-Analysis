@@ -38,14 +38,10 @@ content_1 = []
 for i in range(20000-1924):
     f = open(data_0[i],mode='r',encoding=("UTF8"))
     text_vl = f.read()
-    if '_' in text_vl:
-        text_vl = text_vl.replace('_',' ')
     content_0.append([text_vl,0])
 for i in range(20000-7146):
     f = open(data_1[i],mode='r',encoding=("UTF8"))
     text_vl = f.read()
-    if '_' in text_vl:
-        text_vl = text_vl.replace('_',' ')
     content_1.append([text_vl,1])
 content = content_0+content_1
 
