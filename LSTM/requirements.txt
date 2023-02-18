@@ -1,0 +1,17 @@
+
+Library:
+	pyvi
+	numpy
+	pandas
+	re
+	nltk(download 'omw-1.4')
+	seaborn
+	matplotlib
+	wordcloud
+	keras
+	sklearn
+	os
+	tensorflow
+
+	
+

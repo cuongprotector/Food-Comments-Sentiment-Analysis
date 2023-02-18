@@ -1,0 +1,16 @@
+
+Library:
+	gensim 4.2.0
+	pyvi
+	numpy
+	pandas
+	re
+	nltk(download 'punkt','omw-1.4','wordnet','stopwords')
+	seaborn
+	wordcloud
+	keras
+	sklearn
+	os
+
+	
+
